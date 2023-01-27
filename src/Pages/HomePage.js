@@ -14,7 +14,7 @@ const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
   const [trailer, setTrailer] = useState(null);
-  const [singleMovie, setSingleMovie] = useState({ title: "Loading Movies" });
+  const [singleMovie, setSingleMovie] = useState({});
   const [watchLaterList, setWatchLaterList] = useState([]);
 
   const fetchMovies = async (event) => {
@@ -30,7 +30,7 @@ const HomePage = () => {
     });
 
     setMovies(data.results);
-    setSingleMovie(data.results);
+    setSingleMovie();
 
     if (data.results.length) {
       await fetchSingleMovie(data.results[0].id);
