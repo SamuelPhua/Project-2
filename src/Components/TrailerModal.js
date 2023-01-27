@@ -8,22 +8,16 @@ const TrailerModal = ({ videoId, onClose }) => {
         <YouTube
           videoId={videoId}
           opts={{
-            width: 600,
-            height: 350,
+            width: 1060,
+            height: 500,
             playerVars: {
               autoplay: 1,
-              controls: 0,
-              cc_load_policy: 0,
-              fs: 0,
-              iv_load_policy: 0,
-              modestbranding: 0,
-              rel: 0,
-              showinfo: 0,
+              controls: 0, // control playing of the video
+              rel: 0, // related videos
             },
           }}
         />
       </div>
-
       <button onClick={onClose} className="button close-button-modal">
         Close
       </button>

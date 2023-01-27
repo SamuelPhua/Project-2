@@ -19,8 +19,7 @@ const Movie = ({
           <h5 className="movie-title">{movie.title}</h5>
           <button
             className="button"
-            onClick={(event) => {
-              event.stopPropagation();
+            onClick={() => {
               onClickActionButton?.(movie);
             }}
           >
