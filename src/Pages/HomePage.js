@@ -30,7 +30,6 @@ const HomePage = () => {
     });
 
     setMovies(data.results);
-
     if (data.results.length) {
       await fetchSingleMovie(data.results[0].id);
     }
@@ -48,7 +47,7 @@ const HomePage = () => {
       const trailer = data.videos.results.find(
         (vid) => vid.name === "Official Trailer"
       );
-      setTrailer(trailer);
+      setTrailer(trailer ? trailer : data.videos.results[0]);
     }
     setSingleMovie(data);
   };
