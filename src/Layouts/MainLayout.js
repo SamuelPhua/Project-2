@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../Components/Header";
-import { Outlet } from "react-router-dom";
 
 const MainLayout = ({ fetchMovies, setSearch, children }) => {
   return (
@@ -11,7 +10,6 @@ const MainLayout = ({ fetchMovies, setSearch, children }) => {
         setSearch={setSearch}
       />
       {children}
-      <Outlet />
     </div>
   );
 };
