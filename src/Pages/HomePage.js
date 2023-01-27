@@ -30,6 +30,7 @@ const HomePage = () => {
     });
 
     setMovies(data.results);
+    
     if (data.results.length) {
       await fetchSingleMovie(data.results[0].id);
     }
