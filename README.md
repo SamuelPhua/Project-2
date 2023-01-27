@@ -1,5 +1,13 @@
 This is a movie app developed using React native
 
+This movie app allows me to search for movies that you want, and watch the trailers of the movies from Youtube
+
+Additionally, it allows me to add movies to Watch Later page and remove the movies from the Home page and Watch Later page
+
+The app looks like this
+
+The folders are segregated nicely into Components, Variables, Layouts and Pages
+
 To run this app, you have to do the following
 
 - npm install
