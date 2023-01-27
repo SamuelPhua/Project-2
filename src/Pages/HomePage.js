@@ -48,7 +48,7 @@ const HomePage = () => {
       const trailer = data.videos.results.find(
         (vid) => vid.name === "Official Trailer"
       );
-      setTrailer(trailer ? trailer : data.videos.results[0]);
+      setTrailer(trailer);
     }
     setSingleMovie(data);
   };
