@@ -56,6 +56,7 @@ const HomePage = () => {
   const selectMovie = (movie) => {
     fetchSingleMovie(movie.id);
     setSingleMovie(movie);
+    window.scrollTo(0, 0);
   };
 
   const handleRemoveWatchLater = (movie) => {
