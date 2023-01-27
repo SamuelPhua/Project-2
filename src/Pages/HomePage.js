@@ -30,7 +30,6 @@ const HomePage = () => {
     });
 
     setMovies(data.results);
-    setSingleMovie();
 
     if (data.results.length) {
       await fetchSingleMovie(data.results[0].id);
@@ -57,7 +56,6 @@ const HomePage = () => {
   const selectMovie = (movie) => {
     fetchSingleMovie(movie.id);
     setSingleMovie(movie);
-    window.scrollTo(0, 0);
   };
 
   const handleRemoveWatchLater = (movie) => {
